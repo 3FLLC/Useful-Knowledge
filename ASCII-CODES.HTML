@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<head>
+<title>ASCII Codes</title>
+<style>
+.character { width: 9px; height: 16px; margin: 0 auto }
+
+/*** [Control characters] ****************************************************/
+
+#nul { background:url(/cp437.png) 0 0 }
+#soh { background:url(/cp437.png) -9px 0 }
+#stx { background:url(/cp437.png) -18px 0 }
+#etx { background:url(/cp437.png) -27px 0 }
+#eot { background:url(/cp437.png) -36px 0 }
+#enq { background:url(/cp437.png) -45px 0 }
+#ack { background:url(/cp437.png) -54px 0 }
+#bel { background:url(/cp437.png) -63px 0 }
+#bs { background:url(/cp437.png) -72px 0 }
+#ht { background:url(/cp437.png) -81px 0 }
+#lf { background:url(/cp437.png) -90px 0 }
+#vt { background:url(/cp437.png) -99px 0 }
+#ff { background:url(/cp437.png) -108px 0 }
+#cr { background:url(/cp437.png) -117px 0 }
+#so { background:url(/cp437.png) -126px 0 }
+#si { background:url(/cp437.png) -135px 0 }
+#dle { background:url(/cp437.png) -144px 0 }
+#dc1 { background:url(/cp437.png) -153px 0 }
+#dc2 { background:url(/cp437.png) -162px 0 }
+#dc3 { background:url(/cp437.png) -171px 0 }
+#dc4 { background:url(/cp437.png) -180px 0 }
+#nak { background:url(/cp437.png) -189px 0 }
+#syn { background:url(/cp437.png) -198px 0 }
+#etb { background:url(/cp437.png) -207px 0 }
+#can { background:url(/cp437.png) -216px 0 }
+#em { background:url(/cp437.png) -225px 0 }
+#sub { background:url(/cp437.png) -234px 0 }
+#esc { background:url(/cp437.png) -243px 0 }
+#fs { background:url(/cp437.png) -252px 0 }
+#gs { background:url(/cp437.png) -261px 0 }
+#rs { background:url(/cp437.png) -270px 0 }
+#us { background:url(/cp437.png) -279px 0 }
+
+/*** [ Standard character set ] **********************************************/
+
+#cp437-032 { background:url(/cp437.png) -288px 0 }
+#cp437-033 { background:url(/cp437.png) -297px 0 }
+#cp437-034 { background:url(/cp437.png) -306px 0 }
+#cp437-035 { background:url(/cp437.png) -315px 0 }
+#cp437-036 { background:url(/cp437.png) -324px 0 }
+#cp437-037 { background:url(/cp437.png) -333px 0 }
+#cp437-038 { background:url(/cp437.png) -342px 0 }
+#cp437-039 { background:url(/cp437.png) -351px 0 }
+#cp437-040 { background:url(/cp437.png) -360px 0 }
+#cp437-041 { background:url(/cp437.png) -369px 0 }
+#cp437-042 { background:url(/cp437.png) -378px 0 }
+#cp437-043 { background:url(/cp437.png) -387px 0 }
+#cp437-044 { background:url(/cp437.png) -396px 0 }
+#cp437-045 { background:url(/cp437.png) -405px 0 }
+#cp437-046 { background:url(/cp437.png) -414px 0 }
+#cp437-047 { background:url(/cp437.png) -423px 0 }
+#cp437-048 { background:url(/cp437.png) -432px 0 }
+#cp437-049 { background:url(/cp437.png) -441px 0 }
+#cp437-050 { background:url(/cp437.png) -450px 0 }
+#cp437-051 { background:url(/cp437.png) -459px 0 }
+#cp437-052 { background:url(/cp437.png) -468px 0 }
+#cp437-053 { background:url(/cp437.png) -477px 0 }
+#cp437-054 { background:url(/cp437.png) -486px 0 }
+#cp437-055 { background:url(/cp437.png) -495px 0 }
+#cp437-056 { background:url(/cp437.png) -504px 0 }
+#cp437-057 { background:url(/cp437.png) -513px 0 }
+#cp437-058 { background:url(/cp437.png) -522px 0 }
+#cp437-059 { background:url(/cp437.png) -531px 0 }
+#cp437-060 { background:url(/cp437.png) -540px 0 }
+#cp437-061 { background:url(/cp437.png) -549px 0 }
+#cp437-062 { background:url(/cp437.png) -558px 0 }
+#cp437-063 { background:url(/cp437.png) -567px 0 }
+#cp437-064 { background:url(/cp437.png) -576px 0 }
+#cp437-065 { background:url(/cp437.png) -585px 0 }
+#cp437-066 { background:url(/cp437.png) -594px 0 }
+#cp437-067 { background:url(/cp437.png) -603px 0 }
+#cp437-068 { background:url(/cp437.png) -612px 0 }
+#cp437-069 { background:url(/cp437.png) -621px 0 }
+#cp437-070 { background:url(/cp437.png) -630px 0 }
+#cp437-071 { background:url(/cp437.png) -639px 0 }
+#cp437-072 { background:url(/cp437.png) -648px 0 }
+#cp437-073 { background:url(/cp437.png) -657px 0 }
+#cp437-074 { background:url(/cp437.png) -666px 0 }
+#cp437-075 { background:url(/cp437.png) -675px 0 }
+#cp437-076 { background:url(/cp437.png) -684px 0 }
+#cp437-077 { background:url(/cp437.png) -693px 0 }
+#cp437-078 { background:url(/cp437.png) -702px 0 }
+#cp437-079 { background:url(/cp437.png) -711px 0 }
+#cp437-080 { background:url(/cp437.png) -720px 0 }
+#cp437-081 { background:url(/cp437.png) -729px 0 }
+#cp437-082 { background:url(/cp437.png) -738px 0 }
+#cp437-083 { background:url(/cp437.png) -747px 0 }
+#cp437-084 { background:url(/cp437.png) -756px 0 }
+#cp437-085 { background:url(/cp437.png) -765px 0 }
+#cp437-086 { background:url(/cp437.png) -774px 0 }
+#cp437-087 { background:url(/cp437.png) -783px 0 }
+#cp437-088 { background:url(/cp437.png) -792px 0 }
+#cp437-089 { background:url(/cp437.png) -801px 0 }
+#cp437-090 { background:url(/cp437.png) -810px 0 }
+#cp437-091 { background:url(/cp437.png) -819px 0 }
+#cp437-092 { background:url(/cp437.png) -828px 0 }
+#cp437-093 { background:url(/cp437.png) -837px 0 }
+#cp437-094 { background:url(/cp437.png) -846px 0 }
+#cp437-095 { background:url(/cp437.png) -855px 0 }
+#cp437-096 { background:url(/cp437.png) -864px 0 }
+#cp437-097 { background:url(/cp437.png) -873px 0 }
+#cp437-098 { background:url(/cp437.png) -882px 0 }
+#cp437-099 { background:url(/cp437.png) -891px 0 }
+#cp437-100 { background:url(/cp437.png) -900px 0 }
+#cp437-101 { background:url(/cp437.png) -909px 0 }
+#cp437-102 { background:url(/cp437.png) -918px 0 }
+#cp437-103 { background:url(/cp437.png) -927px 0 }
+#cp437-104 { background:url(/cp437.png) -936px 0 }
+#cp437-105 { background:url(/cp437.png) -945px 0 }
+#cp437-106 { background:url(/cp437.png) -954px 0 }
+#cp437-107 { background:url(/cp437.png) -963px 0 }
+#cp437-108 { background:url(/cp437.png) -972px 0 }
+#cp437-109 { background:url(/cp437.png) -981px 0 }
+#cp437-110 { background:url(/cp437.png) -990px 0 }
+#cp437-111 { background:url(/cp437.png) -999px 0 }
+#cp437-112 { background:url(/cp437.png) -1008px 0 }
+#cp437-113 { background:url(/cp437.png) -1017px 0 }
+#cp437-114 { background:url(/cp437.png) -1026px 0 }
+#cp437-115 { background:url(/cp437.png) -1035px 0 }
+#cp437-116 { background:url(/cp437.png) -1044px 0 }
+#cp437-117 { background:url(/cp437.png) -1053px 0 }
+#cp437-118 { background:url(/cp437.png) -1062px 0 }
+#cp437-119 { background:url(/cp437.png) -1071px 0 }
+#cp437-120 { background:url(/cp437.png) -1080px 0 }
+#cp437-121 { background:url(/cp437.png) -1089px 0 }
+#cp437-122 { background:url(/cp437.png) -1098px 0 }
+#cp437-123 { background:url(/cp437.png) -1107px 0 }
+#cp437-124 { background:url(/cp437.png) -1116px 0 }
+#cp437-125 { background:url(/cp437.png) -1125px 0 }
+#cp437-126 { background:url(/cp437.png) -1134px 0 }
+#cp437-127 { background:url(/cp437.png) -1143px 0 }
+
+/*** [ Extended character set ] **********************************************/
+
+#cp437-128 { background:url(/cp437.png) -1152px 0 }
+#cp437-129 { background:url(/cp437.png) -1161px 0 }
+#cp437-130 { background:url(/cp437.png) -1170px 0 }
+#cp437-131 { background:url(/cp437.png) -1179px 0 }
+#cp437-132 { background:url(/cp437.png) -1188px 0 }
+#cp437-133 { background:url(/cp437.png) -1197px 0 }
+#cp437-134 { background:url(/cp437.png) -1206px 0 }
+#cp437-135 { background:url(/cp437.png) -1215px 0 }
+#cp437-136 { background:url(/cp437.png) -1224px 0 }
+#cp437-137 { background:url(/cp437.png) -1233px 0 }
+#cp437-138 { background:url(/cp437.png) -1242px 0 }
+#cp437-139 { background:url(/cp437.png) -1251px 0 }
+#cp437-140 { background:url(/cp437.png) -1260px 0 }
+#cp437-141 { background:url(/cp437.png) -1269px 0 }
+#cp437-142 { background:url(/cp437.png) -1278px 0 }
+#cp437-143 { background:url(/cp437.png) -1287px 0 }
+#cp437-144 { background:url(/cp437.png) -1296px 0 }
+#cp437-145 { background:url(/cp437.png) -1305px 0 }
+#cp437-146 { background:url(/cp437.png) -1314px 0 }
+#cp437-147 { background:url(/cp437.png) -1323px 0 }
+#cp437-148 { background:url(/cp437.png) -1332px 0 }
+#cp437-149 { background:url(/cp437.png) -1341px 0 }
+#cp437-150 { background:url(/cp437.png) -1350px 0 }
+#cp437-151 { background:url(/cp437.png) -1359px 0 }
+#cp437-152 { background:url(/cp437.png) -1368px 0 }
+#cp437-153 { background:url(/cp437.png) -1377px 0 }
+#cp437-154 { background:url(/cp437.png) -1386px 0 }
+#cp437-155 { background:url(/cp437.png) -1395px 0 }
+#cp437-156 { background:url(/cp437.png) -1404px 0 }
+#cp437-157 { background:url(/cp437.png) -1413px 0 }
+#cp437-158 { background:url(/cp437.png) -1422px 0 }
+#cp437-159 { background:url(/cp437.png) -1431px 0 }
+#cp437-160 { background:url(/cp437.png) -1440px 0 }
+#cp437-161 { background:url(/cp437.png) -1449px 0 }
+#cp437-162 { background:url(/cp437.png) -1458px 0 }
+#cp437-163 { background:url(/cp437.png) -1467px 0 }
+#cp437-164 { background:url(/cp437.png) -1476px 0 }
+#cp437-165 { background:url(/cp437.png) -1485px 0 }
+#cp437-166 { background:url(/cp437.png) -1494px 0 }
+#cp437-167 { background:url(/cp437.png) -1503px 0 }
+#cp437-168 { background:url(/cp437.png) -1512px 0 }
+#cp437-169 { background:url(/cp437.png) -1521px 0 }
+#cp437-170 { background:url(/cp437.png) -1530px 0 }
+#cp437-171 { background:url(/cp437.png) -1539px 0 }
+#cp437-172 { background:url(/cp437.png) -1548px 0 }
+#cp437-173 { background:url(/cp437.png) -1557px 0 }
+#cp437-174 { background:url(/cp437.png) -1566px 0 }
+#cp437-175 { background:url(/cp437.png) -1575px 0 }
+#cp437-176 { background:url(/cp437.png) -1584px 0 }
+#cp437-177 { background:url(/cp437.png) -1593px 0 }
+#cp437-178 { background:url(/cp437.png) -1602px 0 }
+#cp437-179 { background:url(/cp437.png) -1611px 0 }
+#cp437-180 { background:url(/cp437.png) -1620px 0 }
+#cp437-181 { background:url(/cp437.png) -1629px 0 }
+#cp437-182 { background:url(/cp437.png) -1638px 0 }
+#cp437-183 { background:url(/cp437.png) -1647px 0 }
+#cp437-184 { background:url(/cp437.png) -1656px 0 }
+#cp437-185 { background:url(/cp437.png) -1665px 0 }
+#cp437-186 { background:url(/cp437.png) -1674px 0 }
+#cp437-187 { background:url(/cp437.png) -1683px 0 }
+#cp437-188 { background:url(/cp437.png) -1692px 0 }
+#cp437-189 { background:url(/cp437.png) -1701px 0 }
+#cp437-190 { background:url(/cp437.png) -1710px 0 }
+#cp437-191 { background:url(/cp437.png) -1719px 0 }
+#cp437-192 { background:url(/cp437.png) -1728px 0 }
+#cp437-193 { background:url(/cp437.png) -1737px 0 }
+#cp437-194 { background:url(/cp437.png) -1746px 0 }
+#cp437-195 { background:url(/cp437.png) -1755px 0 }
+#cp437-196 { background:url(/cp437.png) -1764px 0 }
+#cp437-197 { background:url(/cp437.png) -1773px 0 }
+#cp437-198 { background:url(/cp437.png) -1782px 0 }
+#cp437-199 { background:url(/cp437.png) -1791px 0 }
+#cp437-200 { background:url(/cp437.png) -1800px 0 }
+#cp437-201 { background:url(/cp437.png) -1809px 0 }
+#cp437-202 { background:url(/cp437.png) -1818px 0 }
+#cp437-203 { background:url(/cp437.png) -1827px 0 }
+#cp437-204 { background:url(/cp437.png) -1836px 0 }
+#cp437-205 { background:url(/cp437.png) -1845px 0 }
+#cp437-206 { background:url(/cp437.png) -1854px 0 }
+#cp437-207 { background:url(/cp437.png) -1863px 0 }
+#cp437-208 { background:url(/cp437.png) -1872px 0 }
+#cp437-209 { background:url(/cp437.png) -1881px 0 }
+#cp437-210 { background:url(/cp437.png) -1890px 0 }
+#cp437-211 { background:url(/cp437.png) -1899px 0 }
+#cp437-212 { background:url(/cp437.png) -1908px 0 }
+#cp437-213 { background:url(/cp437.png) -1917px 0 }
+#cp437-214 { background:url(/cp437.png) -1926px 0 }
+#cp437-215 { background:url(/cp437.png) -1935px 0 }
+#cp437-216 { background:url(/cp437.png) -1944px 0 }
+#cp437-217 { background:url(/cp437.png) -1953px 0 }
+#cp437-218 { background:url(/cp437.png) -1962px 0 }
+#cp437-219 { background:url(/cp437.png) -1971px 0 }
+#cp437-220 { background:url(/cp437.png) -1980px 0 }
+#cp437-221 { background:url(/cp437.png) -1989px 0 }
+#cp437-222 { background:url(/cp437.png) -1998px 0 }
+#cp437-223 { background:url(/cp437.png) -2007px 0 }
+#cp437-224 { background:url(/cp437.png) -2016px 0 }
+#cp437-225 { background:url(/cp437.png) -2025px 0 }
+#cp437-226 { background:url(/cp437.png) -2034px 0 }
+#cp437-227 { background:url(/cp437.png) -2043px 0 }
+#cp437-228 { background:url(/cp437.png) -2052px 0 }
+#cp437-229 { background:url(/cp437.png) -2061px 0 }
+#cp437-230 { background:url(/cp437.png) -2070px 0 }
+#cp437-231 { background:url(/cp437.png) -2079px 0 }
+#cp437-232 { background:url(/cp437.png) -2088px 0 }
+#cp437-233 { background:url(/cp437.png) -2097px 0 }
+#cp437-234 { background:url(/cp437.png) -2106px 0 }
+#cp437-235 { background:url(/cp437.png) -2115px 0 }
+#cp437-236 { background:url(/cp437.png) -2124px 0 }
+#cp437-237 { background:url(/cp437.png) -2133px 0 }
+#cp437-238 { background:url(/cp437.png) -2142px 0 }
+#cp437-239 { background:url(/cp437.png) -2151px 0 }
+#cp437-240 { background:url(/cp437.png) -2160px 0 }
+#cp437-241 { background:url(/cp437.png) -2169px 0 }
+#cp437-242 { background:url(/cp437.png) -2178px 0 }
+#cp437-243 { background:url(/cp437.png) -2187px 0 }
+#cp437-244 { background:url(/cp437.png) -2196px 0 }
+#cp437-245 { background:url(/cp437.png) -2205px 0 }
+#cp437-246 { background:url(/cp437.png) -2214px 0 }
+#cp437-247 { background:url(/cp437.png) -2223px 0 }
+#cp437-248 { background:url(/cp437.png) -2232px 0 }
+#cp437-249 { background:url(/cp437.png) -2241px 0 }
+#cp437-250 { background:url(/cp437.png) -2250px 0 }
+#cp437-251 { background:url(/cp437.png) -2259px 0 }
+#cp437-252 { background:url(/cp437.png) -2268px 0 }
+#cp437-253 { background:url(/cp437.png) -2277px 0 }
+#cp437-254 { background:url(/cp437.png) -2286px 0 }
+#cp437-255 { background:url(/cp437.png) -2295px 0 }
+TABLE {
+	width:800px;
+	border:2px groove #0066AA;
+}
+TR:nth-child(even) {background: #C0FFC0}
+TR:nth-child(odd) {background: #EFEFEF}
+</style>
+</head>
+<body>
+         <h2><a id="control_characters"></a>Control characters (0 - 31) :</h2>
+         <table>
+            <tr><td>Dec</td><td>Hex</td><td>Char</td><td>Description</td><td>Dec</td><td>Hex</td><td>Char</td><td>Description</td></tr>
+            <tr><td>0</td><td>0</td><td><div class="character" id="nul"></div></td><td>NUL (<span>Nul</span>l)</td><td>16</td><td>10</td><td><div class="character" id="dle"></div></td><td>DLE (<span>D</span>ata <span>L</span>ink <span>E</span>scape)</td></tr>
+            <tr><td>1</td><td>1</td><td><div class="character" id="soh"></div></td><td>SOH (<span>S</span>tart <span>o</span>f <span>H</span>eader)</td><td>17</td><td>11</td><td><div class="character" id="dc1"></div></td><td>DC1 (<span>D</span>evice <span>C</span>ontrol <span>1</span>)</td></tr>
+            <tr><td>2</td><td>2</td><td><div class="character" id="stx"></div></td><td>STX (<span>S</span>tart <span>o</span>f <span>T</span>ext)</td><td>18</td><td>12</td><td><div class="character" id="dc2"></div></td><td>DC2 (<span>D</span>evice <span>C</span>ontrol <span>2</span>)</td></tr>
+            <tr><td>3</td><td>3</td><td><div class="character" id="etx"></div></td><td>ETX (<span>E</span>nd <span>o</span>f <span>T</span>ext)</td><td>19</td><td>13</td><td><div class="character" id="dc3"></div></td><td>DC3 (<span>D</span>evice <span>C</span>ontrol <span>3</span>)</td></tr>
+            <tr><td>4</td><td>4</td><td><div class="character" id="eot"></div></td><td>EOT (<span>E</span>nd <span>o</span>f <span>T</span>ransmission)</td><td>20</td><td>14</td><td><div class="character" id="dc4"></div></td><td>DC4 (<span>D</span>evice <span>C</span>ontrol <span>4</span>)</td></tr>
+            <tr><td>5</td><td>5</td><td><div class="character" id="enq"></div></td><td>ENQ (<span>Enq</span>uiry)</td><td>21</td><td>15</td><td><div class="character" id="nak"></div></td><td>NAK (<span>N</span>egative <span>A</span>c<span>k</span>nowledge)</td></tr>
+            <tr><td>6</td><td>6</td><td><div class="character" id="ack"></div></td><td>ACK (<span>Ack</span>nowledge)</td><td>22</td><td>16</td><td><div class="character" id="syn"></div></td><td>SYN (<span>Syn</span>chronous Idle)</td></tr>
+            <tr><td>7</td><td>7</td><td><div class="character" id="bel"></div></td><td>BEL (<span>Bel</span>l)</td><td>23</td><td>17</td><td><div class="character" id="etb"></div></td><td>ETB (<span>E</span>nd of <span>T</span>ransmission <span>B</span>lock)</td></tr>
+            <tr><td>8</td><td>8</td><td><div class="character" id="bs"></div></td><td>BS (<span>B</span>ack<span>S</span>pace)</td><td>24</td><td>18</td><td><div class="character" id="can"></div></td><td>CAN (<span>Can</span>cel)</td></tr>
+            <tr><td>9</td><td>9</td><td><div class="character" id="ht"></div></td><td>HT (<span>H</span>orizontal <span>T</span>abulation)</td><td>25</td><td>19</td><td><div class="character" id="em"></div></td><td>EM (<span>E</span>nd of <span>M</span>edium)</td></tr>
+            <tr><td>10</td><td>A</td><td><div class="character" id="lf"></div></td><td>LF (<span>L</span>ine <span>F</span>eed)</td><td>26</td><td>1A</td><td><div class="character" id="sub"></div></td><td>SUB (<span>Sub</span>stitute)</td></tr>
+            <tr><td>11</td><td>B</td><td><div class="character" id="vt"></div></td><td>VT (<span>V</span>ertical <span>T</span>abulation)</td><td>27</td><td>1B</td><td><div class="character" id="esc"></div></td><td>ESC (<span>Esc</span>ape)</td></tr>
+            <tr><td>12</td><td>C</td><td><div class="character" id="ff"></div></td><td>FF (<span>F</span>orm <span>F</span>eed)</td><td>28</td><td>1C</td><td><div class="character" id="fs"></div></td><td>FS (<span>F</span>ile <span>S</span>eparator)</td></tr>
+            <tr><td>13</td><td>D</td><td><div class="character" id="cr"></div></td><td>CR (<span>C</span>arriage <span>R</span>eturn)</td><td>29</td><td>1D</td><td><div class="character" id="gs"></div></td><td>GS (<span>G</span>roup  <span>S</span>eparator)</td></tr>
+            <tr><td>14</td><td>E</td><td><div class="character" id="so"></div></td><td>SO (<span>S</span>hift <span>O</span>ut)</td><td>30</td><td>1E</td><td><div class="character" id="rs"></div></td><td>RS (<span>R</span>ecord <span>S</span>eparator) </td></tr>
+            <tr><td>15</td><td>F</td><td><div class="character" id="si"></div></td><td>SI (<span>S</span>hift <span>I</span>n)</td><td>31</td><td>1F</td><td><div class="character" id="us"></div></td><td>US (<span>U</span>nit <span>S</span>eparator)</td></tr>
+         </table>
+
+         <h2><a id="standard_character_set"></a>Standard character set (32 - 127) :</h2>
+         <table>
+            <tr><td>Dec</td><td>Hex</td><td>Char</td><td>Description</td><td>Dec</td><td>Hex</td><td>Char</td><td>Description</td></tr>
+            <tr><td>32</td><td>20</td><td><div class="character" id="cp437-032"></div></td><td>Space</td><td>80</td><td>50</td><td><div class="character" id="cp437-080"></div></td><td>Upper case P</td></tr>
+            <tr><td>33</td><td>21</td><td><div class="character" id="cp437-033"></div></td><td>Exclamation mark</td><td>81</td><td>51</td><td><div class="character" id="cp437-081"></div></td><td>Upper case Q</td></tr>
+            <tr><td>34</td><td>22</td><td><div class="character" id="cp437-034"></div></td><td>Quotation Mark</td><td>82</td><td>52</td><td><div class="character" id="cp437-082"></div></td><td>Upper case R</td></tr>
+            <tr><td>35</td><td>23</td><td><div class="character" id="cp437-035"></div></td><td>Hash</td><td>83</td><td>53</td><td><div class="character" id="cp437-083"></div></td><td>Upper case S</td></tr>
+            <tr><td>36</td><td>24</td><td><div class="character" id="cp437-036"></div></td><td>Dollar</td><td>84</td><td>54</td><td><div class="character" id="cp437-084"></div></td><td>Upper case T</td></tr>
+            <tr><td>37</td><td>25</td><td><div class="character" id="cp437-037"></div></td><td>Percent</td><td>85</td><td>55</td><td><div class="character" id="cp437-085"></div></td><td>Upper case U</td></tr>
+            <tr><td>38</td><td>26</td><td><div class="character" id="cp437-038"></div></td><td>Ampersand</td><td>86</td><td>56</td><td><div class="character" id="cp437-086"></div></td><td>Upper case V</td></tr>
+            <tr><td>39</td><td>27</td><td><div class="character" id="cp437-039"></div></td><td>Apostrophe</td><td>87</td><td>57</td><td><div class="character" id="cp437-087"></div></td><td>Upper case W</td></tr>
+            <tr><td>40</td><td>28</td><td><div class="character" id="cp437-040"></div></td><td>Open bracket</td><td>88</td><td>58</td><td><div class="character" id="cp437-088"></div></td><td>Upper case X</td></tr>
+            <tr><td>41</td><td>29</td><td><div class="character" id="cp437-041"></div></td><td>Close bracket</td><td>89</td><td>59</td><td><div class="character" id="cp437-089"></div></td><td>Upper case Y</td></tr>
+            <tr><td>42</td><td>2A</td><td><div class="character" id="cp437-042"></div></td><td>Asterisk</td><td>90</td><td>5A</td><td><div class="character" id="cp437-090"></div></td><td>Upper case Z</td></tr>
+            <tr><td>43</td><td>2B</td><td><div class="character" id="cp437-043"></div></td><td>Plus</td><td>91</td><td>5B</td><td><div class="character" id="cp437-091"></div></td><td>Open square bracket</td></tr>
+            <tr><td>44</td><td>2C</td><td><div class="character" id="cp437-044"></div></td><td>Comma</td><td>92</td><td>5C</td><td><div class="character" id="cp437-092"></div></td><td>Backslash</td></tr>
+            <tr><td>45</td><td>2D</td><td><div class="character" id="cp437-045"></div></td><td>Dash</td><td>93</td><td>5D</td><td><div class="character" id="cp437-093"></div></td><td>Close square bracket</td></tr>
+            <tr><td>46</td><td>2E</td><td><div class="character" id="cp437-046"></div></td><td>Full stop</td><td>94</td><td>5E</td><td><div class="character" id="cp437-094"></div></td><td>Caret</td></tr>
+            <tr><td>47</td><td>2F</td><td><div class="character" id="cp437-047"></div></td><td>Slash</td><td>95</td><td>5F</td><td><div class="character" id="cp437-095"></div></td><td>Underscore</td></tr>
+            <tr><td>48</td><td>30</td><td><div class="character" id="cp437-048"></div></td><td>Zero</td><td>96</td><td>60</td><td><div class="character" id="cp437-096"></div></td><td>Grave accent</td></tr>
+            <tr><td>49</td><td>31</td><td><div class="character" id="cp437-049"></div></td><td>One</td><td>97</td><td>61</td><td><div class="character" id="cp437-097"></div></td><td>Lower case a</td></tr>
+            <tr><td>50</td><td>32</td><td><div class="character" id="cp437-050"></div></td><td>Two</td><td>98</td><td>62</td><td><div class="character" id="cp437-098"></div></td><td>Lower case b</td></tr>
+            <tr><td>51</td><td>33</td><td><div class="character" id="cp437-051"></div></td><td>Three</td><td>99</td><td>63</td><td><div class="character" id="cp437-099"></div></td><td>Lower case c</td></tr>
+            <tr><td>52</td><td>34</td><td><div class="character" id="cp437-052"></div></td><td>Four</td><td>100</td><td>64</td><td><div class="character" id="cp437-100"></div></td><td>Lower case d</td></tr>
+            <tr><td>53</td><td>35</td><td><div class="character" id="cp437-053"></div></td><td>Five</td><td>101</td><td>65</td><td><div class="character" id="cp437-101"></div></td><td>Lower case e</td></tr>
+            <tr><td>54</td><td>36</td><td><div class="character" id="cp437-054"></div></td><td>Six</td><td>102</td><td>66</td><td><div class="character" id="cp437-102"></div></td><td>Lower case f</td></tr>
+            <tr><td>55</td><td>37</td><td><div class="character" id="cp437-055"></div></td><td>Seven</td><td>103</td><td>67</td><td><div class="character" id="cp437-103"></div></td><td>Lower case g</td></tr>
+            <tr><td>56</td><td>38</td><td><div class="character" id="cp437-056"></div></td><td>Eight</td><td>104</td><td>68</td><td><div class="character" id="cp437-104"></div></td><td>Lower case h</td></tr>
+            <tr><td>57</td><td>39</td><td><div class="character" id="cp437-057"></div></td><td>Nine</td><td>105</td><td>69</td><td><div class="character" id="cp437-105"></div></td><td>Lower case i</td></tr>
+            <tr><td>58</td><td>3A</td><td><div class="character" id="cp437-058"></div></td><td>Colon</td><td>106</td><td>6A</td><td><div class="character" id="cp437-106"></div></td><td>Lower case j</td></tr>
+            <tr><td>59</td><td>3B</td><td><div class="character" id="cp437-059"></div></td><td>Semicolon</td><td>107</td><td>6B</td><td><div class="character" id="cp437-107"></div></td><td>Lower case k</td></tr>
+            <tr><td>60</td><td>3C</td><td><div class="character" id="cp437-060"></div></td><td>Less than</td><td>108</td><td>6C</td><td><div class="character" id="cp437-108"></div></td><td>Lower case l</td></tr>
+            <tr><td>61</td><td>3D</td><td><div class="character" id="cp437-061"></div></td><td>Equals sign</td><td>109</td><td>6D</td><td><div class="character" id="cp437-109"></div></td><td>Lower case m</td></tr>
+            <tr><td>62</td><td>3E</td><td><div class="character" id="cp437-062"></div></td><td>Greater than</td><td>110</td><td>6E</td><td><div class="character" id="cp437-110"></div></td><td>Lower case n</td></tr>
+            <tr><td>63</td><td>3F</td><td><div class="character" id="cp437-063"></div></td><td>Question mark</td><td>111</td><td>6F</td><td><div class="character" id="cp437-111"></div></td><td>Lower case o</td></tr>
+            <tr><td>64</td><td>40</td><td><div class="character" id="cp437-064"></div></td><td>At</td><td>112</td><td>70</td><td><div class="character" id="cp437-112"></div></td><td>Lower case p</td></tr>
+            <tr><td>65</td><td>41</td><td><div class="character" id="cp437-065"></div></td><td>Upper case A</td><td>113</td><td>71</td><td><div class="character" id="cp437-113"></div></td><td>Lower case q</td></tr>
+            <tr><td>66</td><td>42</td><td><div class="character" id="cp437-066"></div></td><td>Upper case B</td><td>114</td><td>72</td><td><div class="character" id="cp437-114"></div></td><td>Lower case r</td></tr>
+            <tr><td>67</td><td>43</td><td><div class="character" id="cp437-067"></div></td><td>Upper case C</td><td>115</td><td>73</td><td><div class="character" id="cp437-115"></div></td><td>Lower case s</td></tr>
+            <tr><td>68</td><td>44</td><td><div class="character" id="cp437-068"></div></td><td>Upper case D</td><td>116</td><td>74</td><td><div class="character" id="cp437-116"></div></td><td>Lower case t</td></tr>
+            <tr><td>69</td><td>45</td><td><div class="character" id="cp437-069"></div></td><td>Upper case E</td><td>117</td><td>75</td><td><div class="character" id="cp437-117"></div></td><td>Lower case u</td></tr>
+            <tr><td>70</td><td>46</td><td><div class="character" id="cp437-070"></div></td><td>Upper case F</td><td>118</td><td>76</td><td><div class="character" id="cp437-118"></div></td><td>Lower case v</td></tr>
+            <tr><td>71</td><td>47</td><td><div class="character" id="cp437-071"></div></td><td>Upper case G</td><td>119</td><td>77</td><td><div class="character" id="cp437-119"></div></td><td>Lower case w</td></tr>
+            <tr><td>72</td><td>48</td><td><div class="character" id="cp437-072"></div></td><td>Upper case H</td><td>120</td><td>78</td><td><div class="character" id="cp437-120"></div></td><td>Lower case x</td></tr>
+            <tr><td>73</td><td>49</td><td><div class="character" id="cp437-073"></div></td><td>Upper case I</td><td>121</td><td>79</td><td><div class="character" id="cp437-121"></div></td><td>Lower case y</td></tr>
+            <tr><td>74</td><td>4A</td><td><div class="character" id="cp437-074"></div></td><td>Upper case J</td><td>122</td><td>7A</td><td><div class="character" id="cp437-122"></div></td><td>Lower case z</td></tr>
+            <tr><td>75</td><td>4B</td><td><div class="character" id="cp437-075"></div></td><td>Upper case K</td><td>123</td><td>7B</td><td><div class="character" id="cp437-123"></div></td><td>Open brace</td></tr>
+            <tr><td>76</td><td>4C</td><td><div class="character" id="cp437-076"></div></td><td>Upper case L</td><td>124</td><td>7C</td><td><div class="character" id="cp437-124"></div></td><td>Pipe</td></tr>
+            <tr><td>77</td><td>4D</td><td><div class="character" id="cp437-077"></div></td><td>Upper case M</td><td>125</td><td>7D</td><td><div class="character" id="cp437-125"></div></td><td>Close brace</td></tr>
+            <tr><td>78</td><td>4E</td><td><div class="character" id="cp437-078"></div></td><td>Upper case N</td><td>126</td><td>7E</td><td><div class="character" id="cp437-126"></div></td><td>Tilde</td></tr>
+            <tr><td>79</td><td>4F</td><td><div class="character" id="cp437-079"></div></td><td>Upper case O</td><td>127</td><td>7F</td><td><div class="character" id="cp437-127"></div></td><td>Delete</td></tr>
+         </table>
+   
+         <h2><a id="extended_character_set"></a>Extended character set (128 - 255) :</h2>
+         <table>
+            <tr><td>Dec</td><td>Hex</td><td>Char</td><td>Description</td><td>Dec</td><td>Hex</td><td>Char</td><td>Description</td></tr>    
+            <tr><td>128</td><td>80</td><td><div class="character" id="cp437-128"></div></td><td>Upper case C with cedilla</td><td>192</td><td>C0</td><td><div class="character" id="cp437-192"></div></td><td>Box drawings light up and right</td></tr>
+            <tr><td>129</td><td>81</td><td><div class="character" id="cp437-129"></div></td><td>Lower case u with diaeresis</td><td>193</td><td>C1</td><td><div class="character" id="cp437-193"></div></td><td>Box drawings light up and horizontal</td></tr>
+            <tr><td>130</td><td>82</td><td><div class="character" id="cp437-130"></div></td><td>Lower case e with acute</td><td>194</td><td>C2</td><td><div class="character" id="cp437-194"></div></td><td>Box drawings light down and horizontal</td></tr>
+            <tr><td>131</td><td>83</td><td><div class="character" id="cp437-131"></div></td><td>Lower case a with circumflex</td><td>195</td><td>C3</td><td><div class="character" id="cp437-195"></div></td><td>Box drawings light vertical and right</td></tr>
+            <tr><td>132</td><td>84</td><td><div class="character" id="cp437-132"></div></td><td>Lower case a with diaeresis</td><td>196</td><td>C4</td><td><div class="character" id="cp437-196"></div></td><td>Box drawings light horizontal</td></tr>
+            <tr><td>133</td><td>85</td><td><div class="character" id="cp437-133"></div></td><td>Lower case a with grave</td><td>197</td><td>C5</td><td><div class="character" id="cp437-197"></div></td><td>Box drawings light vertical and horizontal</td></tr>
+            <tr><td>134</td><td>86</td><td><div class="character" id="cp437-134"></div></td><td>Lower case a with ring above</td><td>198</td><td>C6</td><td><div class="character" id="cp437-198"></div></td><td>Box drawings vertical single and right double</td></tr>
+            <tr><td>135</td><td>87</td><td><div class="character" id="cp437-135"></div></td><td>Lower case c with cedilla</td><td>199</td><td>C7</td><td><div class="character" id="cp437-199"></div></td><td>Box drawings vertical double and right single</td></tr>
+            <tr><td>136</td><td>88</td><td><div class="character" id="cp437-136"></div></td><td>Lower case e with circumflex</td><td>200</td><td>C8</td><td><div class="character" id="cp437-200"></div></td><td>Box drawings double up and right</td></tr>
+            <tr><td>137</td><td>89</td><td><div class="character" id="cp437-137"></div></td><td>Lower case e with diaeresis</td><td>201</td><td>C9</td><td><div class="character" id="cp437-201"></div></td><td>Box drawings double down and right</td></tr>
+            <tr><td>138</td><td>8A</td><td><div class="character" id="cp437-138"></div></td><td>Lower case e with grave</td><td>202</td><td>CA</td><td><div class="character" id="cp437-202"></div></td><td>Box drawings double up and horizontal</td></tr>
+            <tr><td>139</td><td>8B</td><td><div class="character" id="cp437-139"></div></td><td>Lower case i with diaeresis</td><td>203</td><td>CB</td><td><div class="character" id="cp437-203"></div></td><td>Box drawings double down and horizontal</td></tr>
+            <tr><td>140</td><td>8C</td><td><div class="character" id="cp437-140"></div></td><td>Lower case i with circumflex</td><td>204</td><td>CC</td><td><div class="character" id="cp437-204"></div></td><td>Box drawings double vertical and right</td></tr>
+            <tr><td>141</td><td>8D</td><td><div class="character" id="cp437-141"></div></td><td>Lower case i with grave</td><td>205</td><td>CD</td><td><div class="character" id="cp437-205"></div></td><td>Box drawings double horizontal</td></tr>
+            <tr><td>142</td><td>8E</td><td><div class="character" id="cp437-142"></div></td><td>Upper case A with diaeresis</td><td>206</td><td>CE</td><td><div class="character" id="cp437-206"></div></td><td>Box drawings double vertical and horizontal</td></tr>
+            <tr><td>143</td><td>8F</td><td><div class="character" id="cp437-143"></div></td><td>Upper case A with ring above</td><td>207</td><td>CF</td><td><div class="character" id="cp437-207"></div></td><td>Box drawings up single and horizontal double</td></tr>
+            <tr><td>144</td><td>90</td><td><div class="character" id="cp437-144"></div></td><td>Upper case E with acute</td><td>208</td><td>D0</td><td><div class="character" id="cp437-208"></div></td><td>Box drawings up double and horizontal single</td></tr>
+            <tr><td>145</td><td>91</td><td><div class="character" id="cp437-145"></div></td><td>Lower case ae</td><td>209</td><td>D1</td><td><div class="character" id="cp437-209"></div></td><td>Box drawings down single and horizontal double</td></tr>
+            <tr><td>146</td><td>92</td><td><div class="character" id="cp437-146"></div></td><td>Upper case AE</td><td>210</td><td>D2</td><td><div class="character" id="cp437-210"></div></td><td>Box drawings down double and horizontal single</td></tr>
+            <tr><td>147</td><td>93</td><td><div class="character" id="cp437-147"></div></td><td>Lower case o with circumflex</td><td>211</td><td>D3</td><td><div class="character" id="cp437-211"></div></td><td>Box drawings up double and right single</td></tr>
+            <tr><td>148</td><td>94</td><td><div class="character" id="cp437-148"></div></td><td>Lower case o with diaeresis</td><td>212</td><td>D4</td><td><div class="character" id="cp437-212"></div></td><td>Box drawings up single and right double</td></tr>
+            <tr><td>149</td><td>95</td><td><div class="character" id="cp437-149"></div></td><td>Lower case o with grave</td><td>213</td><td>D5</td><td><div class="character" id="cp437-213"></div></td><td>Box drawings down single and right double</td></tr>
+            <tr><td>150</td><td>96</td><td><div class="character" id="cp437-150"></div></td><td>Lower case u with circumflex</td><td>214</td><td>D6</td><td><div class="character" id="cp437-214"></div></td><td>Box drawings down double and right single</td></tr>
+            <tr><td>151</td><td>97</td><td><div class="character" id="cp437-151"></div></td><td>Lower case u with grave</td><td>215</td><td>D7</td><td><div class="character" id="cp437-215"></div></td><td>Box drawings vertical double and horizontal single</td></tr>
+            <tr><td>152</td><td>98</td><td><div class="character" id="cp437-152"></div></td><td>Lower case y with diaeresis</td><td>216</td><td>D8</td><td><div class="character" id="cp437-216"></div></td><td>Box drawings vertical single and horizontal double</td></tr>
+            <tr><td>153</td><td>99</td><td><div class="character" id="cp437-153"></div></td><td>Upper case O with diaeresis</td><td>217</td><td>D9</td><td><div class="character" id="cp437-217"></div></td><td>Box drawings light up and left</td></tr>
+            <tr><td>154</td><td>9A</td><td><div class="character" id="cp437-154"></div></td><td>Upper case U with diaeresis</td><td>218</td><td>DA</td><td><div class="character" id="cp437-218"></div></td><td>Box drawings light down and right</td></tr>
+            <tr><td>155</td><td>9B</td><td><div class="character" id="cp437-155"></div></td><td>Cent sign</td><td>219</td><td>DB</td><td><div class="character" id="cp437-219"></div></td><td>Full block</td></tr>
+            <tr><td>156</td><td>9C</td><td><div class="character" id="cp437-156"></div></td><td>Pound sign</td><td>220</td><td>DC</td><td><div class="character" id="cp437-220"></div></td><td>Lower half block</td></tr>
+            <tr><td>157</td><td>9D</td><td><div class="character" id="cp437-157"></div></td><td>Yen sign</td><td>221</td><td>DD</td><td><div class="character" id="cp437-221"></div></td><td>Left half block</td></tr>
+            <tr><td>158</td><td>9E</td><td><div class="character" id="cp437-158"></div></td><td>Peseta sign</td><td>222</td><td>DE</td><td><div class="character" id="cp437-222"></div></td><td>Right half block</td></tr>
+            <tr><td>159</td><td>9F</td><td><div class="character" id="cp437-159"></div></td><td>Lower case f with hook</td><td>223</td><td>DF</td><td><div class="character" id="cp437-223"></div></td><td>Upper half block</td></tr>
+            <tr><td>160</td><td>A0</td><td><div class="character" id="cp437-160"></div></td><td>Lower case a with acute</td><td>224</td><td>E0</td><td><div class="character" id="cp437-224"></div></td><td>Greek lower case alpha</td></tr>
+            <tr><td>161</td><td>A1</td><td><div class="character" id="cp437-161"></div></td><td>Lower case i with acute</td><td>225</td><td>E1</td><td><div class="character" id="cp437-225"></div></td><td>Lower case sharp s</td></tr>
+            <tr><td>162</td><td>A2</td><td><div class="character" id="cp437-162"></div></td><td>Lower case o with acute</td><td>226</td><td>E2</td><td><div class="character" id="cp437-226"></div></td><td>Greek upper case letter gamma</td></tr>
+            <tr><td>163</td><td>A3</td><td><div class="character" id="cp437-163"></div></td><td>Lower case u with acute</td><td>227</td><td>E3</td><td><div class="character" id="cp437-227"></div></td><td>Greek lower case pi</td></tr>
+            <tr><td>164</td><td>A4</td><td><div class="character" id="cp437-164"></div></td><td>Lower case n with tilde</td><td>228</td><td>E4</td><td><div class="character" id="cp437-228"></div></td><td>Greek upper case letter sigma</td></tr>
+            <tr><td>165</td><td>A5</td><td><div class="character" id="cp437-165"></div></td><td>Upper case N with tilde</td><td>229</td><td>E5</td><td><div class="character" id="cp437-229"></div></td><td>Greek lower case sigma</td></tr>
+            <tr><td>166</td><td>A6</td><td><div class="character" id="cp437-166"></div></td><td>Feminine ordinal indicator</td><td>230</td><td>E6</td><td><div class="character" id="cp437-230"></div></td><td>Micro sign</td></tr>
+            <tr><td>167</td><td>A7</td><td><div class="character" id="cp437-167"></div></td><td>Masculine ordinal indicator</td><td>231</td><td>E7</td><td><div class="character" id="cp437-231"></div></td><td>Greek lower case tau</td></tr>
+            <tr><td>168</td><td>A8</td><td><div class="character" id="cp437-168"></div></td><td>Inverted question mark</td><td>232</td><td>E8</td><td><div class="character" id="cp437-232"></div></td><td>Greek upper case letter phi</td></tr>
+            <tr><td>169</td><td>A9</td><td><div class="character" id="cp437-169"></div></td><td>Reversed not sign</td><td>233</td><td>E9</td><td><div class="character" id="cp437-233"></div></td><td>Greek upper case letter theta</td></tr>
+            <tr><td>170</td><td>AA</td><td><div class="character" id="cp437-170"></div></td><td>Not sign</td><td>234</td><td>EA</td><td><div class="character" id="cp437-234"></div></td><td>Greek upper case letter omega</td></tr>
+            <tr><td>171</td><td>AB</td><td><div class="character" id="cp437-171"></div></td><td>Vulgar fraction one half</td><td>235</td><td>EB</td><td><div class="character" id="cp437-235"></div></td><td>Greek lower case delta</td></tr>
+            <tr><td>172</td><td>AC</td><td><div class="character" id="cp437-172"></div></td><td>Vulgar fraction one quarter</td><td>236</td><td>EC</td><td><div class="character" id="cp437-236"></div></td><td>Infinity</td></tr>
+            <tr><td>173</td><td>AD</td><td><div class="character" id="cp437-173"></div></td><td>Inverted exclamation mark</td><td>237</td><td>ED</td><td><div class="character" id="cp437-237"></div></td><td>Greek lower case phi</td></tr>
+            <tr><td>174</td><td>AE</td><td><div class="character" id="cp437-174"></div></td><td>Left-pointing double angle quotation mark</td><td>238</td><td>EE</td><td><div class="character" id="cp437-238"></div></td><td>Greek lower case epsilon</td></tr>
+            <tr><td>175</td><td>AF</td><td><div class="character" id="cp437-175"></div></td><td>Right-pointing double angle quotation mark</td><td>239</td><td>EF</td><td><div class="character" id="cp437-239"></div></td><td>Intersection</td></tr>
+            <tr><td>176</td><td>B0</td><td><div class="character" id="cp437-176"></div></td><td>Light shade</td><td>240</td><td>F0</td><td><div class="character" id="cp437-240"></div></td><td>Identical to</td></tr>
+            <tr><td>177</td><td>B1</td><td><div class="character" id="cp437-177"></div></td><td>Medium shade</td><td>241</td><td>F1</td><td><div class="character" id="cp437-241"></div></td><td>Plus-minus sign</td></tr>
+            <tr><td>178</td><td>B2</td><td><div class="character" id="cp437-178"></div></td><td>Dark shade</td><td>242</td><td>F2</td><td><div class="character" id="cp437-242"></div></td><td>Greater-than or equal to</td></tr>
+            <tr><td>179</td><td>B3</td><td><div class="character" id="cp437-179"></div></td><td>Box drawings light vertical</td><td>243</td><td>F3</td><td><div class="character" id="cp437-243"></div></td><td>Less-than or equal to</td></tr>
+            <tr><td>180</td><td>B4</td><td><div class="character" id="cp437-180"></div></td><td>Box drawings light vertical and left</td><td>244</td><td>F4</td><td><div class="character" id="cp437-244"></div></td><td>Top half integral</td></tr>
+            <tr><td>181</td><td>B5</td><td><div class="character" id="cp437-181"></div></td><td>Box drawings vertical single and left double</td><td>245</td><td>F5</td><td><div class="character" id="cp437-245"></div></td><td>Bottom half integral</td></tr>
+            <tr><td>182</td><td>B6</td><td><div class="character" id="cp437-182"></div></td><td>Box drawings vertical double and left single</td><td>246</td><td>F6</td><td><div class="character" id="cp437-246"></div></td><td>Division sign</td></tr>
+            <tr><td>183</td><td>B7</td><td><div class="character" id="cp437-183"></div></td><td>Box drawings down double and left single</td><td>247</td><td>F7</td><td><div class="character" id="cp437-247"></div></td><td>Almost equal to</td></tr>
+            <tr><td>184</td><td>B8</td><td><div class="character" id="cp437-184"></div></td><td>Box drawings down single and left double</td><td>248</td><td>F8</td><td><div class="character" id="cp437-248"></div></td><td>Degree sign</td></tr>
+            <tr><td>185</td><td>B9</td><td><div class="character" id="cp437-185"></div></td><td>Box drawings double vertical and left</td><td>249</td><td>F9</td><td><div class="character" id="cp437-249"></div></td><td>Bullet operator</td></tr>
+            <tr><td>186</td><td>BA</td><td><div class="character" id="cp437-186"></div></td><td>Box drawings double vertical</td><td>250</td><td>FA</td><td><div class="character" id="cp437-250"></div></td><td>Middle dot</td></tr>
+            <tr><td>187</td><td>BB</td><td><div class="character" id="cp437-187"></div></td><td>Box drawings double down and left</td><td>251</td><td>FB</td><td><div class="character" id="cp437-251"></div></td><td>Square root</td></tr>
+            <tr><td>188</td><td>BC</td><td><div class="character" id="cp437-188"></div></td><td>Box drawings up single and left double</td><td>252</td><td>FC</td><td><div class="character" id="cp437-252"></div></td><td>Superscript lower case n</td></tr>
+            <tr><td>189</td><td>BD</td><td><div class="character" id="cp437-189"></div></td><td>Box drawings double up and left</td><td>253</td><td>FD</td><td><div class="character" id="cp437-253"></div></td><td>Superscript two</td></tr>
+            <tr><td>190</td><td>BE</td><td><div class="character" id="cp437-190"></div></td><td>Box drawings up double and left single</td><td>254</td><td>FE</td><td><div class="character" id="cp437-254"></div></td><td>Black square</td></tr>
+            <tr><td>191</td><td>BF</td><td><div class="character" id="cp437-191"></div></td><td>Box drawings light down and left</td><td>255</td><td>FF</td><td><div class="character" id="cp437-255"></div></td><td>No-break space</td></tr>
+         </table>
+      </div>
+</body>
+</html>
